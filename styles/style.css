@@ -6,33 +6,6 @@ body {
     padding-top: 2rem;
 }
 
-.topnav a {
-    font-family: 'Montserrat', sans-serif;
-    color: #26527D;
-    text-decoration: none;
-    margin-bottom: 2rem;
-    
-}
-
-.topnav a:hover {
-    color: green;
-  }
-
-.name {
-    line-height:50px;
-    font-weight: bold;
-    float: left;
-    font-size: 34px;
-}
-
-.tabs {
-    line-height:50px;
-    float: right;
-    font-size: 14px;
-    padding-left: 24px;
-    text-decoration: none;
-}
-
 body,
 h1,
 h2,
@@ -41,3 +14,51 @@ h4,
 h5 {
   font-family: 'Montserrat', sans-serif;
 }
+
+h1 {
+    font-size: 48;
+}
+
+h3 {
+    font-size: 24;
+    font-weight: 200;
+}
+
+/* NAV BAR */
+.topnav {
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+.topnav a {
+    font-family: 'Montserrat', sans-serif;
+    color: #26527D;
+    line-height:50px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    color: green;
+  } 
+.tabs {
+    float: right;
+    line-height:50px;
+    font-size: 14px;
+    padding-left: 24px;
+}
+
+/* Main Page */
+.flex-main {
+    display: flex;
+    flex-direction: row;
+}
+.flex-left {
+    width: 50%;
+    background-color: green;
+    border: 2px solid red;
+}
+.flex-right {
+    width: 50%;
+    background-color: blue;
+    border: 2px solid red;
+}
+
+
