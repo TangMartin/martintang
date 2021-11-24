@@ -1,3 +1,8 @@
+:root {
+    --highlighter-color: #EEDF5B;
+    --technology-color: #000000;
+}
+
 body {
     max-width: 60rem;
     margin-right: auto;
@@ -48,7 +53,7 @@ h3 {
     padding-left: 24px;
 }
 
-/* Main Page */
+/* MAIN PAGE */
 .flex-main {
     display: flex;
     flex-direction: row;
@@ -84,4 +89,37 @@ h3 {
      60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
     100% { transform: rotate( 0.0deg) }
   }
+
+/* FEATUERED WORK */
+.featured_work {
+    margin-top: 10rem;
+}
+.work_list {
+    list-style: none;
+    padding-left: 0;
+}
+.work_item {
+    margin-top: 4rem;
+}
+.work_image {
+    max-width: 100%;
+}
+.highlight {
+    background: linear-gradient(180deg, #FFFFFF 65%, var(--highlighter-color) 65%);
+    font-weight: 400;
+}
+.technologies {
+    display: flex;
+    flex-direction:row;
+}
+.technologies p {
+    font-size: 12px;
+    margin-right: 5px;
+    color: #FFFFFF;
+    font-weight: 600;
+    border-radius:15px;
+    padding: 4px 8px 4px 8px;
+    background: var(--technology-color);
+}
+
 
