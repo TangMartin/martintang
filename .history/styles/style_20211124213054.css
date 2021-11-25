@@ -1,6 +1,6 @@
 :root {
     --highlighter-color: #EEDF5B;
-    --work-color: #1cca73;
+    --umami-color: #447551;
     --turn-radius: 6deg;
 }
 
@@ -73,6 +73,7 @@ h3 {
     animation-iteration-count: infinite;  /* Never stop waving :) */
     transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
     display: inline-block;
+    padding: 2px;
   }
   
   @keyframes wave-animation {
@@ -100,17 +101,13 @@ h3 {
 .work_item {
     margin-top: 4rem;
 }
-.work_item h1{
-    margin-bottom: 1%;
-}
-
 .work_image {
     max-width: 100%;
 }
 .work_description {
     margin-top: 5px;
-    font-weight: 350;
-    width: 70%;
+    font-weight: 300;
+    width: 80%;
 }
 .highlight {
     background: linear-gradient(180deg, #FFFFFF 65%, var(--highlighter-color) 65%);
@@ -120,21 +117,16 @@ h3 {
     margin-top: 5px;
     display: flex;
     flex-direction:row;
-    color: var(--work-color);
+
 }
 .technologies p {
     font-size: 12px;
-    margin-right: 6px;
+    margin-right: 5px;
     color: #FFFFFF;
     font-weight: 600;
     border-radius:20px;
     padding: 4px 9px 4px 9px;
-    background: var(--work-color);
+    background: var(--umami-color);
 }
-.work_item h3{
-    margin-top: 3%;
-    font-weight: bold;
-    font-size: 14px;
-    color: var(--work-color);
-}
+
 

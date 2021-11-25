@@ -103,7 +103,12 @@ h3 {
 .work_item h1{
     margin-bottom: 1%;
 }
-
+.work_item h3{
+    margin-top: 3%;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--work-color);
+}
 .work_image {
     max-width: 100%;
 }
@@ -131,10 +136,5 @@ h3 {
     padding: 4px 9px 4px 9px;
     background: var(--work-color);
 }
-.work_item h3{
-    margin-top: 3%;
-    font-weight: bold;
-    font-size: 14px;
-    color: var(--work-color);
-}
+
 
