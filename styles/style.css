@@ -68,10 +68,10 @@ h3 {
 }
 
 .wave {
-    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.5s;        /* Change to speed up or slow down */
-    animation-iteration-count: infinite;  /* Never stop waving :) */
-    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    animation-name: wave-animation;  
+    animation-duration: 2.5s;        
+    animation-iteration-count: infinite;  
+    transform-origin: 70% 70%;       
     display: inline-block;
   }
   
@@ -85,6 +85,34 @@ h3 {
      60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
     100% { transform: rotate( 0.0deg) }
   }
+.fade-in1 {
+    opacity: 0;
+	animation: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.fade-in2 {
+    opacity: 0;
+	animation: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.fade-in3 {
+    opacity: 0;
+	animation: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  from {
+  	opacity: 0;
+  }
+  to {
+ 	opacity: 1;
+  }
+}
 
 /* FEATUERED WORK */
 .featured_work {
@@ -103,7 +131,12 @@ h3 {
 .work_item h1{
     margin-bottom: 1%;
 }
-
+.work_item h3{
+    margin-top: 3%;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--work-color);
+}
 .work_image {
     max-width: 100%;
 }
@@ -131,10 +164,5 @@ h3 {
     padding: 4px 9px 4px 9px;
     background: var(--work-color);
 }
-.work_item h3{
-    margin-top: 3%;
-    font-weight: bold;
-    font-size: 14px;
-    color: var(--work-color);
-}
+
 
