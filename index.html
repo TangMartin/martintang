@@ -24,17 +24,23 @@
             <!-- Right Box-->
             <div class="flex-right">
                 <div class="image-stack">
-                    <img style="grid-column: 8; grid-row: 10;" src="./assets/polaroids/Resume.png" />
-                    <img style="grid-column: 3; grid-row: 1;" src="./assets/polaroids/Apsc100.png" />
-                    <img style="grid-column: 1; grid-row: 7;" src="./assets/polaroids/Sunset.png" />
-                    <img style="grid-column: 7; grid-row: 5;" src="./assets/polaroids/Hongkongpng.png" />
-                    <img style="grid-column: 3; grid-row: 11;" src="./assets/polaroids/Aboutme.png" />
-                    <img style="grid-column: 4; grid-row: 5;"src="./assets/polaroids/Jetski.png" />
-                    <img style="grid-column: 5; grid-row: 9;" src="./assets/polaroids/Projects.png" />
+                    <a style="grid-column: 8; grid-row: 10; cursor: pointer; --turn-radius: 12deg; cursor: pointer;" href="./Martin_Tang_Resume.pdf" download>
+                        <img src="./assets/polaroids/Resume.png"/>
+                    </a>
+                    <img style="grid-column: 3; grid-row: 1; --turn-radius: -12deg;" src="./assets/polaroids/Apsc100.png" />
+                    <img style="grid-column: 1; grid-row: 7; --turn-radius: -12deg;" src="./assets/polaroids/Sunset.png" />
+                    <img style="grid-column: 7; grid-row: 5; --turn-radius: 15deg;" src="./assets/polaroids/Hongkongpng.png" />
+                    <a style="grid-column: 3; grid-row: 12; --turn-radius: -12deg; cursor: pointer;" href="./pages/aboutme.html">
+                        <img src="./assets/polaroids/Aboutme.png" />
+                    </a>
+                    <img style="grid-column: 4; grid-row: 5; --turn-radius: -4deg;"src="./assets/polaroids/Jetski.png" />
+                    <a style="grid-column: 5; grid-row: 9; --turn-radius: 10deg; cursor: pointer;" href="#featuredwork">
+                        <img src="./assets/polaroids/Projects.png"/>
+                    </a>
                 </div>                
             </div>
         </div>
-        <div class="featured_work">
+        <div class="featured_work" id="featuredwork">
             <!-- Featured Work -->
             <h1 style="text-align: center; padding-top: 5rem;"> Featured Work </h1>
             <ul class="work_list">

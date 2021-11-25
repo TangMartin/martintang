@@ -1,8 +1,12 @@
 :root {
     --highlighter-color: #EEDF5B;
     --umami-color: #447551;
+    --turn-radius: 6deg;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 body {
     max-width: 70rem;
     margin-right: auto;
@@ -33,27 +37,6 @@ h3 {
     font-weight: 300;
 }
 
-/* NAV BAR */
-.topnav {
-    flex-direction: row;
-    margin-bottom: 1rem;
-}
-.topnav a {
-    font-family: 'Montserrat', sans-serif;
-    color: #26527D;
-    line-height:50px;
-    text-decoration: none;
-}
-.topnav a:hover {
-    color: green;
-  } 
-.tabs {
-    float: right;
-    line-height:50px;
-    font-size: 14px;
-    padding-left: 24px;
-}
-
 /* MAIN PAGE */
 .flex-main {
     display: flex;
@@ -73,6 +56,13 @@ h3 {
     grid-template-rows: repeat(19, 47px);
     padding-left: 5%;
 
+}
+.image-stack img {
+    transition: all 0.3s ease-in-out 0s;
+}
+.image-stack img:hover {
+    transform: rotate(var(--turn-radius));
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .wave {
