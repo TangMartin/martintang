@@ -8,11 +8,11 @@ html{
     scroll-behavior: smooth;
 }
 body {
-    max-width: 70rem;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
-    width: 80vw;
-    padding-top: 2rem;
+    width: 70vw;
+    margin-top: 2rem;
 }
 
 body,
@@ -43,7 +43,6 @@ h3 {
     font-size: 50px;
     margin: 5px 0px 10px 0px;
 }
-
 .flex-left {
     width: 40%;
     padding-top: 23%;
@@ -56,7 +55,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(12, 55px);
     grid-template-rows: repeat(19, 48px);
-    padding-left: 10%;
+    padding-left: 15%;
 
 }
 .image-stack img {
@@ -66,7 +65,18 @@ h3 {
     transform: rotate(var(--turn-radius));
     transition: all 0.3s ease-in-out 0s;
 }
-
+@media screen and (max-width: 1000px)
+{
+    body {
+        width: 90%;
+    }
+    .flex-left {
+        width: 100%;
+    }
+    #phone {
+        display: none;
+    }
+}
 .wave {
     animation-name: wave-animation;  
     animation-duration: 2.5s;        
@@ -116,20 +126,20 @@ h3 {
 
 /* FEATUERED WORK */
 .featured_work {
-    margin-top: -5%;
+    max-width: 80%;
+    margin: 0 auto;
 }
 .featured_work h1 {
-    font-size: 40px;
+    font-size: 42px;
+    margin-bottom: 8%;
 }
 .work_list {
     list-style: none;
     padding-left: 0;
 }
-.work_item {
-    margin-top: 4rem;
-}
 .work_item h1{
     margin-bottom: 1%;
+    font-size: 35px;
 }
 .work_item h3{
     margin-top: 3%;
@@ -163,6 +173,26 @@ h3 {
     border-radius:20px;
     padding: 4px 9px 4px 9px;
     background: var(--work-color);
+}
+@media screen and (max-width: 1000px)
+{
+    .featured_work {
+        max-width: 100%;
+    }
+    .work_item h1{
+        font-size: 5vw;
+    }
+    .technologies p {
+        font-size: 1.5vw;
+    }
+    .work_description {
+        font-weight: 350;
+        width: 100%;
+        font-size: 1.8vw;
+    }
+    .work_item h3 {
+        font-size: 1.5vw;
+    }
 }
 /* ABOUT ME */
 .aboutme_image {
