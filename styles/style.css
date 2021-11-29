@@ -139,13 +139,14 @@ h3 {
 }
 .work_item h1{
     margin-bottom: 1%;
-    font-size: 35px;
+    font-size: 38px;
 }
 .work_item h3{
     margin-top: 3%;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1rem;
     color: var(--work-color);
+    margin-bottom: 5%;
 }
 .work_image {
     max-width: 100%;
@@ -177,13 +178,18 @@ h3 {
 @media screen and (max-width: 1000px)
 {
     .featured_work {
-        max-width: 100%;
+        max-width:  90%;
+    }
+    .featured_work h1 {
+        font-size: 8vw;
     }
     .work_item h1{
         font-size: 5vw;
     }
     .technologies p {
         font-size: 1.5vw;
+        margin-right: 0.8vw;
+        padding: 0.8vw 1vw 0.8vw 1vw;
     }
     .work_description {
         font-weight: 350;
