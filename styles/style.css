@@ -241,8 +241,20 @@ footer li{
 .flexabout-right{
     width: 70%;
     padding-bottom: 2%; 
-    padding-left: 2rem;
+    padding-left: 5vw;
 }
 .flexabout-right a{ 
     font-weight: bold;
+}
+@media screen and (max-width: 1300px)
+{
+    .flexabout-left img{
+        height: 30vw;
+    }
+    .flexabout-right h1 {
+        font-size: 3vw;
+    }
+    .flexabout-right p {
+        font-size: 1.2vw;
+    }
 }
