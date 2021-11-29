@@ -130,7 +130,7 @@ h3 {
     margin: 0 auto;
 }
 .featured_work h1 {
-    font-size: 42px;
+    font-size: 45px;
     margin-bottom: 8%;
 }
 .work_list {
@@ -178,7 +178,7 @@ h3 {
 @media screen and (max-width: 1000px)
 {
     .featured_work {
-        max-width:  90%;
+        max-width: 100%;
     }
     .featured_work h1 {
         font-size: 8vw;
@@ -200,6 +200,28 @@ h3 {
         font-size: 1.5vw;
     }
 }
+/* FOOTER */
+footer {
+    display:flex
+}
+footer div {
+    margin: 0 auto;
+    display: inline;
+}
+footer li{
+    display: inline;
+    margin: 5px
+}
+@media screen and (max-width: 1000px)
+{
+    footer img{
+        height: 6vw;
+    }
+    footer div {
+        padding-right: 13vw;
+    }
+}
+
 /* ABOUT ME */
 .aboutme_image {
     max-width: auto;
