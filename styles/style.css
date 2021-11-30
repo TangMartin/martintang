@@ -257,4 +257,7 @@ footer li{
     .flexabout-right p {
         font-size: 1.2vw;
     }
+    footer img {
+        height: 3vw;
+    }
 }
